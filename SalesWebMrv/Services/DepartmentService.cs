@@ -1,0 +1,24 @@
+﻿using SalesWebMrv.Data;
+using SalesWebMrv.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SalesWebMrv.Services
+{
+    public class DepartmentService
+    {
+        private readonly SalesWebMrvContext _context;
+
+        public DepartmentService(SalesWebMrvContext context)
+        {
+            _context = context;
+        }
+
+        public List<Department> FindAll()
+        {
+            return _context.Department.OrderBy(x => x.Name).ToList();
+        }
+    }
+}
