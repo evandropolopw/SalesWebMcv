@@ -37,7 +37,7 @@ namespace SalesWebMrv
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<SalesWebMrvContext>(options =>
+            services.AddDbContext<SalesWebMvcContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("SalesWebMrvContext"), builder =>
                     builder.MigrationsAssembly("SalesWebMrv")));
 

@@ -13,9 +13,9 @@ namespace SalesWebMrv.Services
 {
     public class SellerService
     {
-        private readonly SalesWebMrvContext _context;
+        private readonly SalesWebMvcContext _context;
 
-        public SellerService(SalesWebMrvContext context)
+        public SellerService(SalesWebMvcContext context)
         {
             _context = context;
         }

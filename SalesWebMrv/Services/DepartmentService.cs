@@ -9,9 +9,9 @@ namespace SalesWebMrv.Services
 {
     public class DepartmentService
     {
-        private readonly SalesWebMrvContext _context;
+        private readonly SalesWebMvcContext _context;
 
-        public DepartmentService(SalesWebMrvContext context)
+        public DepartmentService(SalesWebMvcContext context)
         {
             _context = context;
         }
